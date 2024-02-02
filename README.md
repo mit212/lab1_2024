@@ -76,21 +76,30 @@ For today's lab, you'll need the following parts:
 ```
 git clone git@github.com:mit212/lab1_2024.git
 ```
-2. Move the blink test to the robot.
-3. Change the env:robot.
-4. Put the microcontroller into download mode by holding [BOOT], clicking [RESET] and then releasing [BOOT].
-5. Upload code.
-6. Press [RESET].
+1. Switch the robot environment:
+   1. Click on the `Default(lab1_2024)` button at the bottom of the screen:
+  ![](./.images/robot_env1.png)
+   2. Click on the `env:robot` that appears in the dropdown at the top of the screen. This will change the settings to compile anything in the src/robot folder:
+  ![](./.images/robot_env2.png)
+2. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:
+![](./.images/blink_test.png)
+3. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
+4. Upload code to the microcontroller by pressing the following button:
+  ![](./.images/upload.png)
+5. Run your code by pressing `[RESET]`.
 
 ## 4 Validate Encoder
 1. Plug the microcontroller into the breadboard.
-2. Open `include/pinout.h` and connect the pins to the corresponding 
+2. Open `include/pinout.h` and connect the wires from the motor to the corresponding pins on the microcontroller.
 3. Ensure that the motor driver is powered off. Do this by unplugging the power cable at the emergency stop.
 4. Connect the microcontroller to the computer using a USB-C cable.
+5. Rearrange the files within the `src/` directory such that `encoder_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
+6. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
 
 ## 5 Validate Motor
+1. Rearrange the files within the `src/` directory such that `motor_drive_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
+2. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
 
-
-| :white_check_mark: CHECKOFF 1 |
-|:------------------------------|
-| Show a TA or LA the motor moving.    |
+| :white_check_mark: CHECKOFF 1                      |
+|:---------------------------------------------------|
+| Demonstrate `motor_drive_test.cpp` to an TA or LA. |
