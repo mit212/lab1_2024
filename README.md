@@ -1,7 +1,7 @@
 # Lab 1: Software Configuration
 
 2.12/2.120 Intro to Robotics  
-Spring 2024
+Spring 2024[^1]
 
 ## Table of Contents
 - [1 Pre-Lab: Set Up Environment](#1-pre-lab-set-up-environment)
@@ -94,3 +94,5 @@ git clone git@github.com:mit212/lab1_2024.git
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
 | Demonstrate `motor_drive_test.cpp` to an TA or LA. |
+
+[^1]: Version 1 - 2024: Josh Sohn and Jinger Chong
