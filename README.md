@@ -8,9 +8,6 @@ Spring 2024
   - [1.1 Visual Studio Code](#11-visual-studio-code)
   - [1.2 Python](#12-python)
   - [1.3 Git](#13-git)
-    - [1.3.1 Generate a New SSH Key](#131-generate-a-new-ssh-key)
-    - [1.3.2 Add an SSH key](#132-add-an-ssh-key)
-    - [1.3.3 Add SSH to GitHub account](#133-add-ssh-to-github-account)
   - [1.4 PlatformIO](#14-platformio)
 - [2 Set Up Hardware](#2-set-up-hardware)
 - [3 Validate Microcontroller](#3-validate-microcontroller)
@@ -42,18 +39,11 @@ You can download it here: https://git-scm.com/downloads.
 
 In order to clone a repository using the command line through SSH, you need to set up SSH keys.
 
-#### 1.3.1 Generate a New SSH Key
-
 Generate a new SSH key using the following instructions: [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
-
-#### 1.3.2 Add an SSH key
 
 Add the SSH key to the ssh-agent using the following instructions: [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
 
-#### 1.3.3 Add SSH to GitHub account
-
-Add the SSH key to the GitHub account using the following instructions: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-).
+Add the SSH key to the GitHub account using the following instructions: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 ### 1.4 PlatformIO
 
