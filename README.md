@@ -69,7 +69,8 @@ git clone git@github.com:mit212/lab1_2024.git
    2. Click on the `env:robot` that appears in the dropdown at the top of the screen. This will change the settings to compile anything in the src/robot folder:
   ![](./.images/robot_env2.png)
 2. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:
-![](./.images/blink_test.png)
+
+    ![](./.images/blink_test.png)
 3. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
 4. Upload code to the microcontroller by pressing the following button:
   ![](./.images/upload.png)
