@@ -71,21 +71,25 @@ git clone git@github.com:mit212/lab1_2024.git
 3. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:  
   ![](./.images/blink_test.png)  
 4. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
-5. Upload code to the microcontroller by pressing the following button:  
+5. Upload code to the microcontroller:  
   ![](./.images/upload.png)  
-6. Run your code by pressing `[RESET]`.
+1. Run your code by pressing `[RESET]`.
 
 ### 2.2 Validate Encoder
 1. Plug the microcontroller into the breadboard.
 2. Open `include/pinout.h` and connect the wires from the motor to the corresponding pins on the microcontroller.
 3. Ensure that the motor driver is powered off. Do this by unplugging the power cable at the emergency stop.
-4. Connect the microcontroller to the computer using a USB-C cable.
+4. Connect the microcontroller to your computer using a USB-C cable.
 5. Rearrange the files within the `src/` directory such that `encoder_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
 6. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
+7. Open the Serial Monitor:
+  ![](./.images/serial_monitor.png)  
+8. Rotate the wheel. You should observe that counter clock-wise motion increases each encoder's count, while clockwise motion decreases them.
 
 ### 2.3 Validate Motor
 1. Rearrange the files within the `src/` directory such that `motor_drive_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
 2. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
+3. Proper function will result in the wheel moving back and forth a varying speeds.
 
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
