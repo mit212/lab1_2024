@@ -10,9 +10,9 @@ Spring 2024
   - [1.3 Git](#13-git)
   - [1.4 PlatformIO](#14-platformio)
 - [2 Set Up Hardware](#2-set-up-hardware)
-- [3 Validate Microcontroller](#3-validate-microcontroller)
-- [4 Validate Encoder](#4-validate-encoder)
-- [5 Validate Motor](#5-validate-motor)
+  - [2.1 Validate Microcontroller](#21-validate-microcontroller)
+  - [2.2 Validate Encoder](#22-validate-encoder)
+  - [2.3 Validate Motor](#23-validate-motor)
 
 ## 1 Pre-Lab: Set Up Environment
 Please install the following software to ensure a smooth experience during our lab sessions. If you have already installed any of the following software, you can feel free to skip the corresponding section.
@@ -58,25 +58,28 @@ For today's lab, you'll need the following parts:
 - Breadboard
 - USB-C cable
 
-## 3 Validate Microcontroller
+### 2.1 Validate Microcontroller
 1. Clone this git repo by running the following command in your terminal: 
 ```
 git clone git@github.com:mit212/lab1_2024.git
 ```
-1. Switch the robot environment:
+2. Switch the robot environment:
    1. Click on the `Default(lab1_2024)` button at the bottom of the screen:
+  
   ![](./.images/robot_env1.png)
    2. Click on the `env:robot` that appears in the dropdown at the top of the screen. This will change the settings to compile anything in the src/robot folder:
+  
   ![](./.images/robot_env2.png)
-2. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:
+3. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:
 
-    ![](./.images/blink_test.png)
-3. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
-4. Upload code to the microcontroller by pressing the following button:
+  ![](./.images/blink_test.png)
+4. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
+5. Upload code to the microcontroller by pressing the following button:
+
   ![](./.images/upload.png)
-5. Run your code by pressing `[RESET]`.
+1. Run your code by pressing `[RESET]`.
 
-## 4 Validate Encoder
+### 2.2 Validate Encoder
 1. Plug the microcontroller into the breadboard.
 2. Open `include/pinout.h` and connect the wires from the motor to the corresponding pins on the microcontroller.
 3. Ensure that the motor driver is powered off. Do this by unplugging the power cable at the emergency stop.
@@ -84,7 +87,7 @@ git clone git@github.com:mit212/lab1_2024.git
 5. Rearrange the files within the `src/` directory such that `encoder_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
 6. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
 
-## 5 Validate Motor
+### 2.3 Validate Motor
 1. Rearrange the files within the `src/` directory such that `motor_drive_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
 2. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
 
