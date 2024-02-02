@@ -87,6 +87,6 @@ git clone git@github.com:mit212/lab1_2024.git
 1. Rearrange the files within the `src/` directory such that `motor_drive_test.cpp` is in `src/robot/` and all other `.cpp` files are in `src/test_code/`.
 2. Put the microcontroller into download mode, upload the code, and reset the microcontroller.
 
-| :white_check_mark: CHECKOFF 1                      |
+| :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
 | Demonstrate `motor_drive_test.cpp` to an TA or LA. |
