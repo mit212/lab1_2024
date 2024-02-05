@@ -54,7 +54,7 @@ Git is a distributed version control system that allows for efficient collaborat
 
 You have an enterprise github account associated with your kerberos ID. Please use this account.
 Try logging in at https://github.mit.edu - it will require duo authentication.
-#### 1.4.1 Git CLI
+#### 1.4.1 Git Command Line Interface (CLI)
 1. Download git for your system: https://git-scm.com/downloads.
 ![](./.images/Git_install.png)
 2. Follow the installation instructions
