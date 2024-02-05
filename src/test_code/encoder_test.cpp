@@ -6,7 +6,7 @@
 #define PRINT_DELAY 30 // Delay between printing to serial in milliseconds
 
 // Encoder velocity readers
-EncoderVelocity encoder(LEFT_ENCODER_A_PIN, LEFT_ENCODER_B_PIN, CPR_312_RPM);
+EncoderVelocity encoder(ENCODER_A_PIN, ENCODER_B_PIN, CPR_312_RPM);
 
 
 void setup() {

@@ -12,7 +12,7 @@ void setup(){
 	// Enable the weak pull down resistors
 	ESP32Encoder::useInternalWeakPullResistors=UP;
 
-	encoder.attachFullQuad(LEFT_ENCODER_A_PIN, LEFT_ENCODER_B_PIN);
+	encoder.attachFullQuad(ENCODER_A_PIN, ENCODER_B_PIN);
 }
 
 void loop(){
