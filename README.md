@@ -26,12 +26,11 @@ Visual Studio Code is a popular and lightweight code editor that provides a user
 You can download it here: https://code.visualstudio.com/Download. 
 
 <details>
-<summary>FAQs</summary>
+<summary><i> FAQs </i></summary>
 
-**What version of VSCode do I need?**
-Any version should work. If you are installing for the first time, please use the latest stable build.
-
-**Can I use a different code editor?**
+- **What version of VSCode do I need?**  
+Any version should work. If you are installing for the first time, please use the latest stable build.  
+- **Can I use a different code editor?**  
 We prefer VSCode since we will use the [PlatformIO plug-in](#04-platformio).
 </details>
 
@@ -42,17 +41,18 @@ Python is a versatile and widely-used programming language. We will use Python f
 You can download it here: https://www.python.org/downloads/. Make sure to check the box that says "Add Python X.X to PATH" during installation.
 
 <details>
-<summary>FAQs</summary>
+<summary><i> FAQs </i></summary>
 
-**What version of Python do I need?**
+- **What version of Python do I need?**  
 We recommend at least 3.8 to ensure compatibility with the packages we will use in this class. If you already have Python installed, you should be able to check its version by entering the command `python --version` in your terminal. 
 
-**How do I check that installed Python correctly?**
+- **How do I check that I installed Python correctly?**  
 Entering the command `python` in your terminal should return `Python X.X ...`. If it instead returns `python is not recognized as an internal or external command, operable program, or batch file` or `python: command not found`, you may have forgotten to check the box that says "Add Python X.X to PATH" during installation. You can fix this using the following instructions: [How to Add Python to PATH](https://realpython.com/add-python-to-path/).
 
-**I already have Miniconda/Anaconda Python. Do I need to get Python?**
-We recommend still getting Python. The staff may not be able to help troubleshoot issues relating to `conda`.
+- **I already have Miniconda/Anaconda Python. Do I need to get vanilla Python?**  
+We recommend still getting vanilla Python. The staff may not be able to help troubleshoot issues relating to `conda`.
 </details>
+
 
 ### 0.3 Git
 
@@ -60,18 +60,18 @@ Git is a distributed version control system that allows for efficient collaborat
 
 You can download it here: https://git-scm.com/downloads.
 
-In order to clone a GitHub repository using the terminal through SSH, you need to set up SSH keys:
+In order to clone a GitHub repository using the terminal through SSH, you also need to set up an SSH key:
 1. Generate a new SSH key using the following instructions: [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 2. Add the SSH key to the ssh-agent using the following instructions: [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
 3. Add the SSH key to the GitHub account using the following instructions: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Stop once you reach the section "Generating a new SSH key for a hardware security key."
 
 <details>
-<summary>FAQs</summary>
+<summary><i> FAQs </i></summary>
 
-**What version of Git do I need?**
+- **What version of Git do I need?**  
 Any version should work. If you are installing for the first time, please use the latest stable build.
 
-**How do I use Git?**
+- **How do I use Git?**  
 If you aren't very familiar with Git, don't worry! We will teach the basics throughout the semester. If you are feeling particularly passionate about learning Git, we recommend reading the first few chapters of the [Pro Git guide](https://git-scm.com/book/en/v2).
 </details>
 
