@@ -44,13 +44,13 @@ You can download it here: https://www.python.org/downloads/. Make sure to check 
 <summary><i> FAQs </i></summary>
 
 - **What version of Python do I need?**  
-We recommend at least 3.8 to ensure compatibility with the packages we will use in this class. If you already have Python installed, you should be able to check its version by entering the command `python --version` in your terminal. 
+We recommend at least 3.8 to ensure compatibility with the packages we will use in this class. If you already have Python, you should be able to check its version by entering the command `python --version` in your terminal. 
 
 - **How do I check that I installed Python correctly?**  
 Entering the command `python` in your terminal should return `Python X.X ...`. If it instead returns `python is not recognized as an internal or external command, operable program, or batch file` or `python: command not found`, you may have forgotten to check the box that says "Add Python X.X to PATH" during installation. You can fix this using the following instructions: [How to Add Python to PATH](https://realpython.com/add-python-to-path/).
 
 - **I already have Miniconda/Anaconda Python. Do I need to get vanilla Python?**  
-We recommend still getting vanilla Python. The staff may not be able to help troubleshoot issues relating to `conda`.
+We recommend getting vanilla Python. The staff may not be able to help troubleshoot issues relating to `conda`.
 </details>
 
 
@@ -72,7 +72,7 @@ In order to clone a GitHub repository using the terminal through SSH, you also n
 Any version should work. If you are installing for the first time, please use the latest stable build.
 
 - **How do I use Git?**  
-If you aren't very familiar with Git, don't worry! We will teach the basics throughout the semester. If you are feeling particularly passionate about learning Git, we recommend reading the first few chapters of the [Pro Git guide](https://git-scm.com/book/en/v2).
+If you aren't very familiar with Git, don't worry! We will teach the basics throughout the semester. If you are feeling particularly passionate about learning Git, we recommend reading the first few chapters of [Pro Git](https://git-scm.com/book/en/v2).
 </details>
 
 ### 0.4 PlatformIO
