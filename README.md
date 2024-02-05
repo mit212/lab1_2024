@@ -21,7 +21,7 @@ If you run into any bugs or encounter issues during the installation process, do
 
 ### 0.1 Visual Studio Code (VSCode)
 
-Visual Studio Code is a popular and lightweight code editor that provides a user-friendly interface for coding. We will be using Visual Studio Code extensively throughout this class to program and communicate with the hardware.
+Visual Studio Code is a popular and lightweight code editor that provides a user-friendly interface for coding. We will be using VSCode extensively throughout this class to program and communicate with the hardware.
 
 You can download it here: https://code.visualstudio.com/Download. 
 
@@ -92,21 +92,25 @@ For today's lab, you'll need the following parts:
 - USB-C cable
 
 ### 1.1 Validate Microcontroller
-1. Clone this git repo by running the following command in your terminal: 
-```
-git clone git@github.com:mit212/lab1_2024.git
-```
+1. Clone this GitHub repository by entering the following command in your terminal: 
+
+    ```
+    git clone git@github.com:mit212/lab1_2024.git
+    ```
+
+    If you are getting a `Permission denied (publickey)` error, double check your [SSH key set up](#03-git).
+
 2. Switch the robot environment:
    1. Click on the `Default(lab1_2024)` button at the bottom of the screen:  
   ![](./.images/robot_env1.png)  
-   2. Click on the `env:robot` that appears in the dropdown at the top of the screen. This will change the settings to compile anything in the src/robot folder:  
+   2. Click on the `env:robot` that appears in the dropdown at the top of the screen. This will change the settings to compile anything in the `src/robot` folder:  
   ![](./.images/robot_env2.png)  
 3. Rearrange the files within `src/` directory such that `blink_test.cpp` is in `src/robot/` and all the other `.cpp` files are in `src/test_code/`:  
   ![](./.images/blink_test.png)  
 4. Put the microcontroller into download mode by holding `[BOOT]`, clicking `[RESET]` and then releasing `[BOOT]`. Depending on your operating system, you may have to do you this every time you want to upload code to your microcontroller.
 5. Upload code to the microcontroller:  
   ![](./.images/upload.png)  
-1. Run your code by pressing `[RESET]`.
+6. Run your code by pressing `[RESET]`. You should see the onboard LED blink.
 
 ### 1.2 Validate Encoder
 1. Plug the microcontroller into the breadboard.
