@@ -4,51 +4,77 @@
 Spring 2024[^1]
 
 ## Table of Contents
-- [1 Pre-Lab: Set Up Environment](#1-pre-lab-set-up-environment)
-  - [1.1 Visual Studio Code](#11-visual-studio-code)
-  - [1.2 Python](#12-python)
-  - [1.3 Git](#13-git)
-  - [1.4 PlatformIO](#14-platformio)
-- [2 Set Up Hardware](#2-set-up-hardware)
-  - [2.1 Validate Microcontroller](#21-validate-microcontroller)
-  - [2.2 Validate Encoder](#22-validate-encoder)
-  - [2.3 Validate Motor](#23-validate-motor)
+- [Lab 1: Software Configuration](#lab-1-software-configuration)
+  - [Table of Contents](#table-of-contents)
+  - [1 Pre-Lab: Set Up Environment](#1-pre-lab-set-up-environment)
+    - [1.1 Visual Studio Code](#11-visual-studio-code)
+    - [1.2 PlatformIO](#12-platformio)
+    - [1.4 Python](#14-python)
+    - [1.4 Git](#14-git)
+      - [1.4.1 Git CLI](#141-git-cli)
+      - [1.4.2 Github Desktop](#142-github-desktop)
+      - [1.4.3 SSH Key](#143-ssh-key)
+  - [2 Set Up Hardware](#2-set-up-hardware)
+    - [2.1 Validate Microcontroller](#21-validate-microcontroller)
+    - [2.2 Validate Encoder](#22-validate-encoder)
+    - [2.3 Validate Motor](#23-validate-motor)
 
 ## 1 Pre-Lab: Set Up Environment
-Please install the following software to ensure a smooth experience during our lab sessions. If you have already installed any of the following software, you can feel free to skip the corresponding section.
+Please install the following software.
 
-If you run into any bugs or encounter issues during the installation process, don't waste too much time trying to debug the problem. Setting up a development environment for the first time can often be frustrating. Feel free to bring any issues to your lab section, and we will help you resolve them.
+If you already have the software installed, you can skip the new installation.
+
+If you run into any bugs or encounter issues during the installation process, contact the lab staff! We can also resolve issues during the first lab, but having these installed in advance will make the lab experience run smoother.
 
 ### 1.1 Visual Studio Code
 
-Visual Studio Code is a popular and lightweight code editor that provides a user-friendly interface for coding. We will be using Visual Studio Code extensively throughout this class to program and communicate with the hardware.
+1. Download it here for your system: https://code.visualstudio.com/Download. 
+![](./.images/VSCode_install.png)
+1. Click on the .exe file that downloads and follow the install instructions.
 
-You can download it here: https://code.visualstudio.com/Download. 
+### 1.2 PlatformIO
 
-### 1.2 Python
+PlatformIO is an open-source ecosystem for IoT development with support for various microcontroller platforms. The PlatformIO extension in Visual Studio Code provides a seamless environment for embedded systems programming. We will be using the Arduino ecosystem in platformio, so if you are familiar with programming microcontrollers with the Arduino IDE, the code will be familiar.
 
-Python is a versatile and widely-used programming language. We will use Python for writing and executing code in this class.
+1. Open the VSCode application.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window and search for "PlatformIO IDE" in the search bar.
+3. Find the PlatformIO IDE extension in the search results and click the "Install" button.
+   
+### 1.4 Python
 
-You can download it here: https://www.python.org/downloads/. Make sure to check the box that says "Add Python X.X to PATH" during installation.
+1. Download Python here 3.12.1: https://www.python.org/downloads/
+2. Click "Add python.exe to PATH"
+![](./.images/Python_install.png)
+3. Click Install Now and finish the installation
 
-### 1.3 Git
+
+### 1.4 Git
 
 Git is a distributed version control system that allows for efficient collaboration and tracking changes in code. We will use Git to manage our code repositories.
 
-You can download it here: https://git-scm.com/downloads.
+You have an enterprise github account associated with your kerberos ID. Please use this account.
+Try logging in at https://github.mit.edu - it will require duo authentication.
+#### 1.4.1 Git CLI
+1. Download git for your system: https://git-scm.com/downloads.
+![](./.images/Git_install.png)
+2. Follow the installation instructions
 
+#### 1.4.2 Github Desktop
+1. Download github desktop here: https://desktop.github.com/.
+2. Click the .exe file that was downloaded
+3. Sign in to GitHub Enterprise
+   ![](./.images/Github_Desktop.png)
+   1. Use https://github.mit.edu to sign in
+   ![](./.images/Github_Desktop_2.png)
+   2. It will redirect you to your browser where you can sign in
+
+#### 1.4.3 SSH Key
 In order to clone a repository using the command line through SSH, you need to set up SSH keys:
 1. Generate a new SSH key using the following instructions: [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 2. Add the SSH key to the ssh-agent using the following instructions: [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
 3. Add the SSH key to the GitHub account using the following instructions: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Stop once you reach the section "Generating a new SSH key for a hardware security key."
 
-### 1.4 PlatformIO
 
-PlatformIO is an open-source ecosystem for IoT development with support for various microcontroller platforms. The PlatformIO extension in Visual Studio Code provides a seamless environment for embedded systems programming.
-
-1. Open the VSCode application.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window and search for "PlatformIO IDE" in the search bar.
-3. Find the PlatformIO IDE extension in the search results and click the "Install" button.
 
 ## 2 Set Up Hardware
 
@@ -96,3 +122,4 @@ git clone git@github.com:mit212/lab1_2024.git
 | Demonstrate `motor_drive_test.cpp` to an TA or LA. |
 
 [^1]: Version 1 - 2024: Josh Sohn and Jinger Chong
+[^2]: Version 2 - 2024: Joseph Ntaimo and Josh Sohn and Jinger Chong
