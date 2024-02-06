@@ -139,16 +139,27 @@ We will start by actuating the motors using only the motor controller.
 3. Push and hold the `M1A` and `M1B` buttons on the motor controller one at a time to see the wheel spin! Each button should spin the wheel in opposite directions. 
 
 ### 3.2 Wiring up the Motor and Microcontroller 
-We will then wire the motor controller to the microcontroller so that we can use code to command the motors.
+We will then wire the motor controller to the microcontroller so that we can use code to command the motors. 
 
-**this section is currently being written**
+1. Open `include/pinout.h` and find the assigned motor `DIR1` and `PWM1` pin numbers. 
+2. Plug the microcontroller into the breadboard.
+    <details>
+    <summary><i> How do I use a breadboard?</i>
+    </summary>
 
-1. Use the jumper cables to connect what to what We specified the colors but that doesnt really matter.
+    If this is your first time using a breadboard, please refer to this [online guide](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/) or approach a TA or LA for a crash course!
+    </details>
+3. Use the jumper cables to connect the following:
+    | motor controller | microcontroller | suggested cable color |
+    | ------------- | ------------- | ------------- |
+    | `DIR1`  | from step 1  | orange |
+    | `PWM1`  | from step 1 | white |
+    | `GND` | **`-`** (`GND`)| black or brown |
 
-these numbers are specified in the include file
-**mini lesson on schematics here**
+    Note: We have suggested jumper cable colors for convention, but remember that the **colors alone don't mean anything**! If you see a black jumper cable in the future, don't automatically assume that it must be ground.
+4. Examine the *schematic* below and confirm that it corresponds to the wiring you just did. Make sure you completely understand the correspondence as you will only be provided with a schematic for the next wiring task! Feel free to clarify with a TA or LA if needed.
 
-2. Open `include/pinout.h` and connect the wires from the motor to the corresponding pins on the microcontroller.
+    **INSERT SCHEMATIC HERE**
 
 ### 3.3 Microcontroller Actuation
    
@@ -171,7 +182,7 @@ Using what you learned about reading schematics in the [previous section](#32-wi
 
 **INSERT SCHEMATICS HERE**
 
-You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` for missing pin numbers. If you need help, don't be afraid to ask a TA or LA!
+Hint: You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` for missing pin numbers. If you need help, don't be afraid to ask a TA or LA!
 
 
 ### 4.2 Testing the Encoder
@@ -191,6 +202,7 @@ To see the encoder in action, we will upload the provided encoder test code on t
 ## X Optional 
 
 ### X.1 Controlling the Motor via Joystick
+
 **Add optional exercise, schematics and skeleton code needed**
 
 ### X.2 Git through VSCode Source Control
