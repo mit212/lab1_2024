@@ -147,14 +147,14 @@ We will then wire the motor controller to the microcontroller so that we can use
     <summary><i> How do I use a breadboard?</i>
     </summary>
 
-    If this is your first time using a breadboard, please refer to this [online guide](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/) or approach a TA or LA for a crash course!
+    Please refer to this [online guide](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/) or approach a TA or LA for a crash course!
     </details>
 3. Use the jumper cables to connect the following:
     | motor controller | microcontroller | suggested cable color |
     | ------------- | ------------- | ------------- |
     | `DIR1`  | from step 1  | orange |
     | `PWM1`  | from step 1 | white |
-    | `GND` | **`-`** (`GND`)| black or brown |
+    | `GND` | **`-`** / `GND`| black or brown |
 
     Note: We have suggested jumper cable colors for convention, but remember that the **colors alone don't mean anything**! If you see a black jumper cable in the future, don't automatically assume that it must be ground.
 4. Examine the *schematic* below and confirm that it corresponds to the wiring you just did. Make sure you completely understand the correspondence as you will only be provided with a schematic for the next wiring task! Feel free to clarify with a TA or LA if needed.
