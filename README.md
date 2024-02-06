@@ -22,6 +22,7 @@ Spring 2024[^1]
   - [4 Validating the Encoder](#4-validating-the-encoder)
     - [4.1 Wiring up the Encoder and Microcontroller](#41-wiring-up-the-encoder-and-microcontroller)
     - [4.2 Testing the Encoder](#42-testing-the-encoder)
+  - [5 Feedback Form](#5-feedback-form)
   - [X Optional](#x-optional)
     - [X.1 Controlling the Motor via Joystick](#x1-controlling-the-motor-via-joystick)
     - [X.2 Git through VSCode Source Control](#x2-git-through-vscode-source-control)
@@ -154,7 +155,7 @@ We will then wire the motor controller to the microcontroller so that we can use
     | ------------- | ------------- | ------------- |
     | `DIR1`  | from step 1  | orange |
     | `PWM1`  | from step 1 | white |
-    | `GND` | **`-`** / `GND`| black or brown |
+    | `GND` | **`-`** or `GND`| black or brown |
 
     Note: We have suggested jumper cable colors for convention, but remember that the **colors alone don't mean anything**! If you see a black jumper cable in the future, don't automatically assume that it must be ground.
 4. Examine the *schematic* below and confirm that it corresponds to the wiring you just did. Make sure you completely understand the correspondence as you will only be provided with a schematic for the next wiring task! Feel free to clarify with a TA or LA if needed.
@@ -168,9 +169,9 @@ Finally, we will upload the provided motor test code on the microcontroller!
 2. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower overall at lower voltages, and doesn't spin at all below certain voltages! This is because the motor controller has a lower limit it needs to surpass in order to function. 
 3. Change the output voltage back to about `15V`.
 
-    | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
-    |:---------------------------------------------------|
-    | Demonstrate `motor_drive_test.cpp` to a TA or LA. |
+| :white_check_mark: CHECKOFF 1 :white_check_mark:   |
+|:---------------------------------------------------|
+| Demonstrate `motor_drive_test.cpp` to a TA or LA. |
 
 ## 4 Validating the Encoder
 
@@ -195,9 +196,13 @@ To see the encoder in action, we will upload the provided encoder test code on t
 
     **INSERT PICTURE OF ENCODER COUNT?**
 
-    | :white_check_mark: CHECKOFF 2 :white_check_mark:   |
-    |:---------------------------------------------------|
-    | Demonstrate `encoder_test.cpp` to a TA or LA. |
+| :white_check_mark: CHECKOFF 2 :white_check_mark:   |
+|:---------------------------------------------------|
+| Demonstrate `encoder_test.cpp` to a TA or LA. |
+
+## 5 Feedback Form
+
+Please fill out the feedback form at https://tinyurl.com/212-feedback and present the completion screen to a TA or LA before you leave! 
 
 ## X Optional 
 
