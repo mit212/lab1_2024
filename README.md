@@ -135,7 +135,7 @@ Now that we have confirmed the microcontroller is working, we want to test the m
 ### 3.1 Motor Controller Actuation
 
 We will start by actuating the motors using only the motor controller. 
-1. Connect the motor power cables to the motor controller cables (`M-` to `M1A` and `M+` to `M1B`).
+1. Connect the motor power cables to the motor controller cables (black to `M1A` and red to `M1B`).
 2. Plug in the power supply output to the motor controller input. 
 3. Push and hold the `M1A` and `M1B` buttons on the motor controller one at a time to see the wheel spin! Each button should spin the wheel in opposite directions. 
 
