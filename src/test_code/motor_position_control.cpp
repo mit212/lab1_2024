@@ -19,7 +19,7 @@ double controlEffort = 0; //duty cycle
 
 
 MotorDriver motor(DIR1, PWM1, 0);
-EncoderVelocity encoder(LEFT_ENCODER_A_PIN, LEFT_ENCODER_B_PIN, CPR_312_RPM, 0.2);
+EncoderVelocity encoder(ENCODER_A_PIN, ENCODER_B_PIN, CPR_312_RPM, 0.2);
 
 //variables for calculating the average time between PID loops
 unsigned long currentPidLoopStartTime = 0;
