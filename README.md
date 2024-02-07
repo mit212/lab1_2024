@@ -36,7 +36,8 @@ Please install the following software. Although you are working in pairs today, 
 2. Follow installation instructions. When prompted for which extensions you want to install, refer to the next two sections.
 <details>
 <summary><i> Can I use a different code editor? </i></summary>
-We prefer VSCode since we will use the [PlatformIO plug-in](#12-platformio).
+
+We prefer VSCode since we will use the [PlatformIO plug-in](#12-platformio-extension).
 </details>
 
 ### 1.2 PlatformIO Extension
@@ -51,7 +52,7 @@ PlatformIO is an open-source ecosystem for IoT development with support for vari
 
 Since the code we need for the microcontroller is based on C++, we also need a C++ extension in VSCode for context-aware code completion. This helps speed up the coding process and reduce bugs.
 
-1. Repeat the process in the [previous section](#12-platformio) to navigate to the Extensions tab.
+1. Repeat the process in the [previous section](#12-platformio-extension) to navigate to the Extensions tab.
 2. Search for "C/C++" by Microsoft and click "Install".
 
 ### 1.4 Git 
