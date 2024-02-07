@@ -76,7 +76,7 @@ For today's lab, you should have the following parts:
 - Jumper cables
 - USB-C cable
 
-**INSERT PICTURE OF SETUP HERE WITH LABELS OF WHAT IS WHAT**
+![](./.images/setup.jpg)  
 
 ## 3 Validating the Microcontroller
 
@@ -158,7 +158,7 @@ We will then wire the motor driver to the microcontroller so that we can use cod
 Finally, we will upload the provided motor test code on the microcontroller!
 1. Repeat the process outlined in the [previous section](#22-uploading-code-on-the-microcontroller) to run `motor_drive_test.cpp` instead of `blink_test.cpp`. The wheel should spin in different directions with varied speeds.
 2. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower overall at lower voltages, and doesn't spin at all below certain voltages! This is because the motor driver has a lower limit it needs to surpass in order to function. 
-3. Change the output voltage back to about `15V`.
+3. Change the output voltage back to about `12V`.
 
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
@@ -177,7 +177,7 @@ We can now test our entire system consisting of the microcontroller, motor, moto
 
 Using what you learned about reading schematics in the [previous section](#32-wiring-up-the-motor-and-microcontroller), wire up the encoder to the microcontroller based on the schematics below! 
 
-**INSERT SCHEMATIC HERE**
+![](./.images/schematic2.png)  
 
 Hint: You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` to confirm pin numbers. If you need help, don't be afraid to ask a TA or LA!
 
@@ -185,10 +185,13 @@ Hint: You only need to connect the 4 encoder wires to the microcontroller throug
 ### 5.2 Testing the Encoder
 To see the encoder in action, we will upload the provided encoder test code on the microcontroller.
 1. Ensure that the motor driver is powered off by unplugging the power supply cable connection.
+
+encoder basic test to see how many counts per rev
+
 2. Upload and run `encoder_test.cpp`. 
 3. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
   ![](./.images/serial_monitor.png)  
-4. Rotate the wheel. Observe that counter-clockwise motion increases the encoder position count, while clockwise motion decreases it!
+4. Rotate the wheel. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
 
 
 | :white_check_mark: CHECKOFF 2 :white_check_mark:   |
@@ -205,6 +208,6 @@ If you finished lab early, here's a few optional challenges you can try!
 
 ### X.1 Controlling the Motor via Joystick
 
-**Add optional exercise, schematics and skeleton code needed**
+Please approach a member of the lab staff for some extra parts.
 
 [^1]: Version 1 - 2024: Joseph Ntaimo, Josh Sohn, Jinger Chong
