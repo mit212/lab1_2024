@@ -35,11 +35,7 @@ Please install the following software. Although you are working in pairs today, 
 1. Download VSCode here: https://code.visualstudio.com/Download.
 2. Follow installation instructions. When prompted for which extensions you want to install, refer to the next two sections.
 <details>
-<summary><i> FAQs </i></summary>
-
-- **What version of VSCode do I need?**  
-Any version should work. If you are installing for the first time, please use the latest stable build.  
-- **Can I use a different code editor?**  
+<summary><i> Can I use a different code editor? </i></summary>
 We prefer VSCode since we will use the [PlatformIO plug-in](#12-platformio).
 </details>
 
