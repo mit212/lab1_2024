@@ -109,12 +109,9 @@ Now that you have the code on your machine, you can *upload* it on the microcont
 3. Put the microcontroller into *download* mode by holding down the onboard `BOOT` button, clicking the adjacent `RST` button, and then releasing `BOOT`. **Depending on your machine, you may have to do you this every time you want to upload code on your microcontroller.** 
 
     <details>
-    <summary><i> COM port doesn't exist error? </i></summary>
+    <summary><i> Upload failed? COM port doesn't exist? </i></summary>
 
-    The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. You can also try manually changing the upload port by clicking the plug icon with the word "Auto" at the bottom of the screen and selecting from the dropdown that appears at the top of the screen.
-
-    ![](./.images/port.png) 
-
+    Delete the `.pio` folder and put the microcontroller into *download* mode again. The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. 
     </details>
 4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller.
   ![](./.images/upload.png)  
@@ -163,6 +160,14 @@ We will then wire the motor driver to the microcontroller so that we can use cod
    
 Finally, we will upload the provided motor test code on the microcontroller!
 1. Repeat the process outlined in the [previous section](#22-uploading-code-on-the-microcontroller) to run `motor_drive_test.cpp` instead of `blink_test.cpp`. The wheel should spin in different directions with varied speeds.
+
+    <details>
+    <summary><i> Nothing is happening?</i>
+    </summary>
+
+    As noted at the end of the [previous section](#32-uploading-code-on-the-microcontroller), make sure you have rearranged the files in the `src` directory so that `motor_drive_test.cpp` is in the `robot` subfolder and everything else is in the `test_code` subfolder. PlatformIO will only compile the files in `src/robot`. 
+    </details>
+
 2. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower overall at lower voltages, and doesn't spin at all below certain voltages! This is because the motor driver has a lower limit it needs to surpass in order to function. 
 3. Change the output voltage back to about `12V`.
 
@@ -212,6 +217,6 @@ If you finished lab early, here's a few optional challenges you can try!
 
 ### X.1 Controlling the Motor via Joystick
 
-Please approach a member of the lab staff for some extra parts.
+Please ask the staff for extra parts!
 
 [^1]: Version 1 - 2024: Joseph Ntaimo, Josh Sohn, Jinger Chong
