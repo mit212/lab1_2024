@@ -158,6 +158,13 @@ We will then wire the motor driver to the microcontroller so that we can use cod
     Note: We have suggested jumper cable colors for convention, but remember that the **colors alone don't mean anything**! If you see a black jumper cable in the future, don't automatically assume that it must be ground.
 
     <details>
+    <summary><i> Nothing is happening?</i>
+    </summary>
+
+    Make sure you wired up the motor driver and not the encoder! The motor driver is the **PCB** you connected to the power supply output, while the encoder is the black cylinder attached to the end of the motor.
+    </details>
+
+    <details>
     <summary><i> How do I use a breadboard?</i>
     </summary>
 
@@ -228,8 +235,9 @@ The goal for this challenge is to use a joystick to dictate the position of the 
 #### X.1.1 Motor Position Control
 
 We have provided code that performs basic motor position control with PID. We first want you to get familiar with this code.
-1. Open `motor_position_control.cpp` and read its contents. 
-2. Upload and run `motor_position_control.cpp`. You should see the wheel cycle back and forth.
+1. Open `motor_position_control.cpp` and read its contents.
+2. Plug in the power supply output to the motor driver input.
+3. Upload and run `motor_position_control.cpp`. You should see the wheel cycle back and forth.
 
 #### X.1.2 Wiring up the Joystick
 
