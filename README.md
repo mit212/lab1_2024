@@ -25,6 +25,8 @@ Spring 2024[^1]
   - [6 Feedback Form](#5-feedback-form)
   - [X Optional](#x-optional)
     - [X.1 Controlling the Motor via Joystick](#x1-controlling-the-motor-via-joystick)
+      - [X.1.1 Wiring up the Joystick](#x11-wiring-up-the-joystick)
+      - [X.1.2 Joystick Input](#x12-joystick-input)
 
 ## 1 Software Set Up
  
@@ -96,7 +98,7 @@ Note: In the future, if you need to view or edit a repository you have already c
 ### 3.2 Uploading Code on the Microcontroller
 Now that you have the code on your machine, you can *upload* it on the microcontroller. This is a process we will repeat not only in this lab but throughout the semester, so try to remember the steps! We will first upload a simple test that changes the color of the onboard LED.
 
-1. To verify that the code compiles, first *build* the code by clicking the check mark at the bottom of the screen. A terminal window will open to report progress as your code builds. Once done, it should say `SUCCESS`.
+1. To verify that the code compiles, first *build* the code by clicking the check mark at the bottom of the screen. A terminal window will open to report progress as your code builds. Once done, it should say `SUCCESS`. 
 ![](./.images/build.png)  
 
     <details>
@@ -165,7 +167,7 @@ Finally, we will upload the provided motor test code on the microcontroller!
     <summary><i> Nothing is happening?</i>
     </summary>
 
-    As noted at the end of the [previous section](#32-uploading-code-on-the-microcontroller), make sure you have rearranged the files in the `src` directory so that `motor_drive_test.cpp` is in the `robot` subfolder and everything else is in the `test_code` subfolder. PlatformIO will only compile the files in `src/robot`. 
+    As noted at the end of the [previous section](#32-uploading-code-on-the-microcontroller), make sure you have rearranged the files in the `src` directory so that `motor_drive_test.cpp` is in the `robot` subfolder and everything else is in the `test_code` subfolder. PlatformIO will only compile the files in the `src/robot/` directory. 
     </details>
 
 2. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower overall at lower voltages, and doesn't spin at all below certain voltages! This is because the motor driver has a lower limit it needs to surpass in order to function. 
@@ -190,14 +192,13 @@ Using what you learned about reading schematics in the [previous section](#32-wi
 
 ![](./.images/schematic2.png)  
 
-Hint: You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` to confirm pin numbers. If you need help, don't be afraid to ask a TA or LA!
-
+Hint: You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` to confirm pin numbers.
 
 ### 5.2 Testing the Encoder
 To see the encoder in action, we will upload the provided encoder test code on the microcontroller.
 1. Ensure that the motor driver is powered off by unplugging the power supply cable connection.
 2. Upload and run `encoder_basic_test.cpp`. 
-3. By looking at the counts printed in the terminal, estimate how many encoder counts it takes per revolution. 
+3. By looking at the counts printed in the terminal window, estimate how many encoder counts it takes per revolution. 
 4. Upload and run `encoder_test.cpp`. 
 5. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
   ![](./.images/serial_monitor.png)  
@@ -215,8 +216,38 @@ Before you leave, please fill out https://tinyurl.com/212-feedback and present t
 
 If you finished lab early, here's a few optional challenges you can try!
 
+
+run motor position control
+
 ### X.1 Controlling the Motor via Joystick
 
-Please ask the staff for extra parts!
+The goal for this challenge is to use a joystick to dictate the position of the motor. 
+
+#### X.1.1 Motor Position Control
+
+We have provided code that performs basic motor position control using PID. We first want you to get familiar with this code.
+1. Open `motor_position_control.cpp` and read its contents. 
+2. Upload and run `motor_position_control.cpp`. You should see the wheel cycle back and forth.
+
+#### X.1.2 Wiring up the Joystick
+
+Please ask a TA or LA for a joystick. Refer to the schematic below to wire it to the rest of the system.
+
+#### X.1.3 Printing Joystick Input
+
+We will now write some code to collect and print input from the joystick. 
+1. Right-click on the `robot` subfolder and click "New File...".
+2. Name the file `motor_joystick_control.cpp`. It is important that you include `.cpp` in the filename.
+3. Copy down the code written on the whiteboard.
+4. Upload and run `motor_joystick_control.cpp`. You should see the positions of the two potentiometers of the joystick print on the terminal window!
+
+#### X.1.4 Put It All Together!
+
+Combine `motor_joystick_control.cpp` and `motor_position_control.cpp` so that the `setpoint` in `motor_position_control.cpp` is dictated by either `x` or `y` in `motor_joystick_control.cpp`. 
+
+| :white_check_mark: OPTIONAL CHECKOFF 3 :white_check_mark:   |
+|:---------------------------------------------------|
+| Demonstrate your very cool joystick-controlled motor to a TA or LA! |
+
 
 [^1]: Version 1 - 2024: Joseph Ntaimo, Josh Sohn, Jinger Chong
