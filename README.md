@@ -235,6 +235,8 @@ We have provided code that performs basic motor position control with PID. We fi
 
 Please ask a TA or LA for a joystick. Refer to the schematic below to wire it to the rest of the system.
 
+![](./.images/schematic3.png)  
+
 #### X.1.3 Printing Joystick Input
 
 We will now write some code to collect and print input from the joystick. 
