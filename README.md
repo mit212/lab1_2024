@@ -122,7 +122,7 @@ Now that you have the code on your machine, you can *upload* it on the microcont
 
     Delete the `.pio` folder and put the microcontroller into *download* mode again. The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. 
     </details>
-4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller. The upload process also includes compiling so if you only make small changes in the future, you don't need to also build before uploading.
+4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller. The upload process also includes compiling so if you only make small changes in the future, you don't need to build before uploading.
   ![](./.images/upload.png)  
 5. Run the code by clicking `RST`. You should see the onboard LED change colors! 
 6. For the lab partner who did not get to use their machine to upload code on the microcontroller yet, open `src/robot/blink_test.cpp`.
