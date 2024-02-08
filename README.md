@@ -141,6 +141,8 @@ We will start by actuating the motors using only the motor driver.
 1. Connect the motor power cables to the motor driver cables (black to black and red to orange).
 2. Plug in the power supply output to the motor driver input. 
 3. Push and hold either of the `M1A` and `M1B` buttons on the motor driver to see the wheel spin! Each button should spin the wheel in opposite directions. 
+4. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower at lower voltages, and doesn't spin at all below certain voltages! This is because the motor driver has a lower limit it needs to surpass in order to function. 
+5. Change the output voltage back to about `12V`.
 
 ### 4.2 Wiring up the Motor and Microcontroller 
 We will then wire the motor driver to the microcontroller so that we can use code to command the motors. 
@@ -167,18 +169,14 @@ We will then wire the motor driver to the microcontroller so that we can use cod
 
 ### 4.3 Microcontroller Actuation
    
-Finally, we will upload the provided motor test code on the microcontroller!
-1. Repeat the process outlined in the [previous section](#22-uploading-code-on-the-microcontroller) to run `motor_drive_test.cpp` instead of `blink_test.cpp`. The wheel should spin in different directions with varied speeds.
+Finally, we will upload the provided motor test code on the microcontroller! Repeat the process outlined in the [previous section](#22-uploading-code-on-the-microcontroller) to run `motor_drive_test.cpp` instead of `blink_test.cpp`. The wheel should spin in different directions with varied speeds.
 
-    <details>
-    <summary><i> Nothing is happening?</i>
-    </summary>
+<details>
+<summary><i> Nothing is happening?</i>
+</summary>
 
-    As noted at the end of the [previous section](#32-uploading-code-on-the-microcontroller), make sure you have rearranged the files in the `src` directory so that `motor_drive_test.cpp` is in the `robot` subfolder and everything else is in the `test_code` subfolder. PlatformIO will only compile the files in the `src/robot/` directory. 
-    </details>
-
-2. The power supply has a knob to vary its output voltage. Try changing this to about `10V`, `7V`, then `3V`. Notice that the wheel spins slower overall at lower voltages, and doesn't spin at all below certain voltages! This is because the motor driver has a lower limit it needs to surpass in order to function. 
-3. Change the output voltage back to about `12V`.
+As noted at the end of the [previous section](#32-uploading-code-on-the-microcontroller), make sure you have rearranged the files in the `src` directory so that `motor_drive_test.cpp` is in the `robot` subfolder and everything else is in the `test_code` subfolder. PlatformIO will only compile the files in the `src/robot/` directory. 
+</details>
 
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
@@ -205,10 +203,10 @@ Hint: You only need to connect the 4 encoder wires to the microcontroller throug
 To see the encoder in action, we will upload the provided encoder test code on the microcontroller.
 1. Ensure that the motor driver is powered off by unplugging the power supply cable connection.
 2. Upload and run `encoder_basic_test.cpp`. 
-3. By looking at the counts printed in the terminal window, estimate how many encoder counts it takes per revolution. 
+3. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
+  ![](./.images/serial_monitor.png) 
+3. By looking at the counts printed in the Serial Monitor, estimate how many encoder counts it takes per revolution. 
 4. Upload and run `encoder_test.cpp`. 
-5. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
-  ![](./.images/serial_monitor.png)  
 6. Rotate the wheel. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
 
 | :white_check_mark: CHECKOFF 2 :white_check_mark:   |
