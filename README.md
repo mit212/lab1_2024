@@ -121,6 +121,10 @@ Now that you have the code on your machine, you can *upload* it on the microcont
     <summary><i> Upload failed? COM port doesn't exist? </i></summary>
 
     Delete the `.pio` folder and put the microcontroller into *download* mode again. The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. 
+
+    You can also try manually selecting the upload port. Click the plug icon next to "Auto" at the bottom of the screen and try the options that appear at the top of the screen.
+
+    ![](./.images/port.png)
     </details>
 4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller. The upload process also includes compiling so if you only make small changes in the future, you don't need to build before uploading.
   ![](./.images/upload.png)  
@@ -161,7 +165,7 @@ We will then wire the motor driver to the microcontroller so that we can use cod
     <summary><i> Nothing is happening?</i>
     </summary>
 
-    Make sure you wired up the motor driver and not the encoder! The motor driver is the **PCB** you connected to the power supply output, while the encoder is the black cylinder attached to the end of the motor.
+    Make sure you wired up the motor driver and **not the encoder**! The motor driver is the **PCB** you connected to the power supply output, while the encoder is the black cylinder attached to the end of the motor.
     </details>
 
     <details>
