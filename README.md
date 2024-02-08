@@ -55,7 +55,12 @@ PlatformIO is an open-source ecosystem for IoT development with support for vari
 Since the code we need for the microcontroller is based on C++, we also need a C++ extension in VSCode for context-aware code completion. This helps speed up the coding process and reduce bugs.
 
 1. Repeat the process in the [previous section](#12-platformio-extension) to navigate to the Extensions tab.
-2. Search for "C/C++" by Microsoft and click "Install".
+2. Search for "C/C++" by Microsoft and click "Install". We want the extension that only says "C/C++".
+    <details>
+    <summary><i>Can't find "Install"? </i></summary>
+
+    If you don't see "Install" and instead only see "Uninstall", you must already have this extension!
+    </details>
 
 ### 1.4 Git 
 
