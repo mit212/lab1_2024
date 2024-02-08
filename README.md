@@ -216,16 +216,13 @@ Before you leave, please fill out https://tinyurl.com/212-feedback and present t
 
 If you finished lab early, here's a few optional challenges you can try!
 
-
-run motor position control
-
 ### X.1 Controlling the Motor via Joystick
 
 The goal for this challenge is to use a joystick to dictate the position of the motor. 
 
 #### X.1.1 Motor Position Control
 
-We have provided code that performs basic motor position control using PID. We first want you to get familiar with this code.
+We have provided code that performs basic motor position control with PID. We first want you to get familiar with this code.
 1. Open `motor_position_control.cpp` and read its contents. 
 2. Upload and run `motor_position_control.cpp`. You should see the wheel cycle back and forth.
 
@@ -243,7 +240,7 @@ We will now write some code to collect and print input from the joystick.
 
 #### X.1.4 Put It All Together!
 
-Combine `motor_joystick_control.cpp` and `motor_position_control.cpp` so that the `setpoint` in `motor_position_control.cpp` is dictated by either `x` or `y` in `motor_joystick_control.cpp`. 
+Combine `motor_joystick_control.cpp` and `motor_position_control.cpp` so that the `setpoint` in `motor_position_control.cpp` is dictated by either `x` or `y` in `motor_joystick_control.cpp`.
 
 | :white_check_mark: OPTIONAL CHECKOFF 3 :white_check_mark:   |
 |:---------------------------------------------------|
