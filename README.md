@@ -106,7 +106,16 @@ Now that you have the code on your machine, you can *upload* it on the microcont
 
     </details>
 2. Connect the microcontroller to your machine using a USB-C cable.
-3. Put the microcontroller into *download* mode by holding down the onboard `BOOT` button, clicking the adjacent `RST` button, and then releasing `BOOT`. **Depending on your machine, you may have to do you this every time you want to upload code on your microcontroller.**
+3. Put the microcontroller into *download* mode by holding down the onboard `BOOT` button, clicking the adjacent `RST` button, and then releasing `BOOT`. **Depending on your machine, you may have to do you this every time you want to upload code on your microcontroller.** 
+
+    <details>
+    <summary><i> COM port doesn't exist error? </i></summary>
+
+    The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. You can also try manually changing the upload port by clicking the plug icon with the word "Auto" at the bottom of the screen and selecting from the dropdown that appears at the top of the screen.
+
+    ![](./.images/port.png) 
+
+    </details>
 4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller.
   ![](./.images/upload.png)  
 5. Run the code by clicking `RST`. You should see the onboard LED change colors! 
@@ -182,14 +191,12 @@ Hint: You only need to connect the 4 encoder wires to the microcontroller throug
 ### 5.2 Testing the Encoder
 To see the encoder in action, we will upload the provided encoder test code on the microcontroller.
 1. Ensure that the motor driver is powered off by unplugging the power supply cable connection.
-
-encoder basic test to see how many counts per rev
-
-2. Upload and run `encoder_test.cpp`. 
-3. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
+2. Upload and run `encoder_basic_test.cpp`. 
+3. By looking at the counts printed in the terminal, estimate how many encoder counts it takes per revolution. 
+4. Upload and run `encoder_test.cpp`. 
+5. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
   ![](./.images/serial_monitor.png)  
-4. Rotate the wheel. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
-
+6. Rotate the wheel. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
 
 | :white_check_mark: CHECKOFF 2 :white_check_mark:   |
 |:---------------------------------------------------|
