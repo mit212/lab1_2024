@@ -25,8 +25,10 @@ Spring 2024[^1]
   - [6 Feedback Form](#5-feedback-form)
   - [X Optional](#x-optional)
     - [X.1 Controlling the Motor via Joystick](#x1-controlling-the-motor-via-joystick)
-      - [X.1.1 Wiring up the Joystick](#x11-wiring-up-the-joystick)
-      - [X.1.2 Joystick Input](#x12-joystick-input)
+      - [X.1.1 Motor Position Control](#x11-motor-position-control)
+      - [X.1.2 Wiring Up the Joystick](#x12-wiring-up-the-joystick)
+      - [X.1.3 Printing Joystick Input](#x13-printing-joystick-input)
+      - [X.1.4 Put It All Together](#x14-put-it-all-together)
 
 ## 1 Software Set Up
  
@@ -120,7 +122,7 @@ Now that you have the code on your machine, you can *upload* it on the microcont
 
     Delete the `.pio` folder and put the microcontroller into *download* mode again. The onboard LED on the microcontroller **should be off** when it is in *download* mode. Make sure you clicked `RST` **while you are still holding down** `BOOT`. You should only let go of `BOOT` after you have let go of `RST`. 
     </details>
-4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller.
+4. Click the right arrow at the bottom of the screen to upload the code on the microcontroller. The upload process also includes compiling so if you only make small changes in the future, you don't need to also build before uploading.
   ![](./.images/upload.png)  
 5. Run the code by clicking `RST`. You should see the onboard LED change colors! 
 6. For the lab partner who did not get to use their machine to upload code on the microcontroller yet, open `src/robot/blink_test.cpp`.
