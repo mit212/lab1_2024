@@ -83,7 +83,7 @@ For today's lab, you should have the following parts:
 - USB-C cable
 
 <p align="center">
-<img src="./.images/setup.jpg" alt="setup" width="500"/>
+<img src="./.images/setup.jpg" alt="setup" width="600"/>
 </p>
 
 ## 3 Validating the Microcontroller
@@ -178,7 +178,9 @@ We will then wire the motor driver to the microcontroller so that we can use cod
     </details>
     
 3. Examine the *schematic* diagram below and confirm that it corresponds to the wiring you just did. Make sure you completely understand the correspondence as you will only be provided with a schematic for the next wiring task! Feel free to clarify with a TA or LA if needed.
-![](./.images/schematic1.png)  
+<p align="center">
+<img src="./.images/schematic1.png" width="600"/>
+</p>
 
 ### 4.3 Microcontroller Actuation
    
@@ -208,7 +210,9 @@ We can now test our entire system consisting of the microcontroller, motor, moto
 
 Using what you learned about reading schematics in the [previous section](#32-wiring-up-the-motor-and-microcontroller), wire up the encoder to the microcontroller based on the schematics below! 
 
-![](./.images/schematic2.png)  
+<p align="center">
+<img src="./.images/schematic2.png" width="800"/>
+</p>
 
 Hint: You only need to connect the 4 encoder wires to the microcontroller through the breadboard. Remember to refer to `include/pinout.h` to confirm pin numbers.
 
@@ -249,7 +253,9 @@ We have provided code that performs basic motor position control with PID. We fi
 
 Please ask a TA or LA for a joystick. Refer to the schematic below to wire it to the rest of the system.
 
-![](./.images/schematic3.png)  
+<p align="center">
+<img src="./.images/schematic3.png" width="900"/>
+</p>
 
 #### X.1.3 Printing Joystick Input
 
