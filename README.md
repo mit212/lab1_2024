@@ -5,13 +5,13 @@ Spring 2024[^1]
 
 ## Table of Contents
 - [Lab 1: DC Motor Basics](#lab-1-dc-motor-basics)
-  - [Table of Contents](#table-of-contents)  
+  - [Table of Contents](#table-of-contents)
   - [1 Software Set Up](#1-software-set-up)
     - [1.1 Visual Studio Code (VSCode)](#11-visual-studio-code-vscode)
     - [1.2 PlatformIO Extension](#12-platformio-extension)
     - [1.3 C/C++ Extension](#13-cc-extension)
     - [1.4 Git](#14-git)
-  - [2 Hardware Set Up](#2-hardware-set-up)
+  - [2 Hardware Set up](#2-hardware-set-up)
   - [3 Validating the Microcontroller](#3-validating-the-microcontroller)
     - [3.1 Git Clone](#31-git-clone)
     - [3.2 Uploading Code on the Microcontroller](#32-uploading-code-on-the-microcontroller)
@@ -19,16 +19,16 @@ Spring 2024[^1]
     - [4.1 Motor Driver Actuation](#41-motor-driver-actuation)
     - [4.2 Wiring up the Motor and Microcontroller](#42-wiring-up-the-motor-and-microcontroller)
     - [4.3 Microcontroller Actuation](#43-microcontroller-actuation)
-  - [5 Validating the Encoder](#4-validating-the-encoder)
+  - [5 Validating the Encoder](#5-validating-the-encoder)
     - [5.1 Wiring up the Encoder and Microcontroller](#51-wiring-up-the-encoder-and-microcontroller)
     - [5.2 Testing the Encoder](#52-testing-the-encoder)
-  - [6 Feedback Form](#5-feedback-form)
+  - [6 Feedback Form](#6-feedback-form)
   - [X Optional](#x-optional)
     - [X.1 Controlling the Motor via Joystick](#x1-controlling-the-motor-via-joystick)
       - [X.1.1 Motor Position Control](#x11-motor-position-control)
-      - [X.1.2 Wiring Up the Joystick](#x12-wiring-up-the-joystick)
+      - [X.1.2 Wiring up the Joystick](#x12-wiring-up-the-joystick)
       - [X.1.3 Printing Joystick Input](#x13-printing-joystick-input)
-      - [X.1.4 Put It All Together](#x14-put-it-all-together)
+      - [X.1.4 Put It All Together!](#x14-put-it-all-together)
 
 ## 1 Software Set Up
  
@@ -82,7 +82,9 @@ For today's lab, you should have the following parts:
 - Jumper cables
 - USB-C cable
 
-![](./.images/setup.jpg)  
+<p align="center">
+<img src="./.images/setup.jpg" alt="setup" width="500"/>
+</p>
 
 ## 3 Validating the Microcontroller
 
@@ -216,9 +218,9 @@ To see the encoder in action, we will upload the provided encoder test code on t
 2. Upload and run `encoder_basic_test.cpp`. 
 3. Open the Serial Monitor by clicking the plug icon at the bottom of the screen.
   ![](./.images/serial_monitor.png) 
-3. By looking at the counts printed in the Serial Monitor, estimate how many encoder counts it takes per revolution. 
+3. By looking at the counts printed in the Serial Monitor, estimate how many encoder counts it takes per revolution. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
 4. Upload and run `encoder_test.cpp`. 
-6. Rotate the wheel. Observe that counter-clockwise motion increases the encoder count, while clockwise motion decreases it!
+5. Rotate the wheel. Confirm that the position and velocity readings make sense!
 
 | :white_check_mark: CHECKOFF 2 :white_check_mark:   |
 |:---------------------------------------------------|
