@@ -7,5 +7,6 @@
 
 //encoder pins
 #define ENCODER_A_PIN 21
-#define ENCODER_B_PIN 38
+#define ENCODER_B_PIN 5
+
 #endif

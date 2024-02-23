@@ -232,7 +232,11 @@ To see the encoder in action, we will upload the provided encoder test code on t
 
 ## 6 Feedback Form
 
-Before you leave, please fill out https://tinyurl.com/212-feedback and present the completion screen to a TA or LA. 
+Before you leave, please fill out https://tinyurl.com/212-feedback. 
+
+| :white_check_mark: CHECKOFF 3 :white_check_mark:   |
+|:---------------------------------------------------|
+| Show the feedback form completion screen to a TA or LA. |
 
 ## X Optional 
 
